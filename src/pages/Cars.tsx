@@ -1,4 +1,7 @@
-const heroImage = '/cars/transfers.jpg';
+import PlanningBanner from '../components/PlanningBanner';
+import { publicUrl } from '../lib/publicUrl';
+
+const heroImage = publicUrl('cars/transfers.jpg');
 
 const figures = [
   {
@@ -18,7 +21,7 @@ const figures = [
       'Commanding, unhurried, and built for a group rather than a single passenger — the fleet\'s executive SUV is the choice when a sedan feels too small for the occasion. Equally at home collecting a family from the airport or delivering a founder to an investor dinner.',
       'Every vehicle in the fleet is maintained to the same standard as the yachts and jets it connects to — spotless, current, and driven only by vetted chauffeurs.',
     ],
-    image: '/cars/suv.jpg',
+    image: publicUrl('cars/suv.jpg'),
     alt: 'Executive luxury SUV',
     layout: 'split-reverse',
   },
@@ -28,13 +31,11 @@ const figures = [
       'Stitched leather, real wood trim, and a cabin quiet enough to take a call or simply say nothing at all — the interior is where this service actually distinguishes itself from any ordinary taxi or rideshare.',
       "A rolling extension of the same standard set by the yacht's saloon or the jet's cabin: nothing rented in a hurry, everything considered.",
     ],
-    image: '/cars/cabin.jpg',
+    image: publicUrl('cars/cabin.jpg'),
     alt: 'Luxury car interior with leather and wood trim',
     layout: 'split',
   },
 ] as const;
-
-import PlanningBanner from '../components/PlanningBanner';
 
 type CarsProps = {
   onInquire: () => void;

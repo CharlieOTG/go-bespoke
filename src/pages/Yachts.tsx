@@ -1,6 +1,7 @@
 import PlanningBanner from '../components/PlanningBanner';
+import { publicUrl } from '../lib/publicUrl';
 
-const heroImage = '/yachts/image3.jpg';
+const heroImage = publicUrl('yachts/image3.jpg');
 
 const figures = [
   {
@@ -9,7 +10,7 @@ const figures = [
       'A graceful introduction to the Elite fleet, her flowing lines and shaded upper sundeck set the tone for an afternoon spent entirely at ease. Below, an air-conditioned saloon offers quiet respite from the Gulf sun, while the forward lounge invites conversation against a backdrop of Dubai\'s skyline.',
       'Intimate by design, she suits those who measure luxury by calm rather than scale.',
     ],
-    image: '/yachts/image1.jpg',
+    image: publicUrl('yachts/image1.jpg'),
     alt: 'Elite Diamond Madison A-48 yacht on Dubai waters',
     layout: 'split-reverse',
   },
@@ -19,7 +20,7 @@ const figures = [
       'Cast at sunset, the Lima 70 carries the same commanding 70ft presence with a livelier social layout — built for gatherings that spill joyfully across every deck.',
       'A natural stage for a birthday toast or a golden-hour celebration among friends.',
     ],
-    image: '/yachts/image2.jpg',
+    image: publicUrl('yachts/image2.jpg'),
     alt: 'Elite Diamond Lima 70 yacht at sunset',
     layout: 'split',
   },
@@ -29,7 +30,7 @@ const figures = [
       'Among the newest additions to the fleet, her striking white livery is captured here gliding past the sail-shaped silhouette of the Burj Al Arab — a fitting companion.',
       'Every surface still carries the polish of a recent build, offering guests a genuinely new-yacht experience from the moment they step aboard.',
     ],
-    image: '/yachts/image3.jpg',
+    image: publicUrl('yachts/image3.jpg'),
     alt: 'New Elite White Rivera 60 passing the Burj Al Arab',
     layout: 'split-reverse',
   },
@@ -39,7 +40,7 @@ const figures = [
       'The flagship of the standard fleet — nearly 80ft of multi-level deck space conceived for grand occasions. Corporate showcases, milestone birthdays and full-scale celebrations all find their stage here.',
       'Enough room across her decks for a crowd to gather without ever feeling contained.',
     ],
-    image: '/yachts/image4.jpg',
+    image: publicUrl('yachts/image4.jpg'),
     alt: 'Elite Diamond Venice flagship yacht',
     layout: 'split',
   },
@@ -49,7 +50,7 @@ const figures = [
       'Elite Rentals Dubai\'s signature vessel — a genuine Lamborghini-branded yacht co-designed with Automobili Lamborghini and built in a strictly limited run of just 63 hulls worldwide. Her exterior echoes the marque\'s automotive language: a low, aggressive profile, angular carbon-look surfaces and the signature Y-shaped design cues found on Lamborghini\'s cars.',
       'Bookings are restricted to a maximum of 8 VIP guests, preserving a lower-density, more exclusive experience. The charter is fully staffed — VIP-trained crew and captain, dedicated security, two hostesses, private chauffeured transport to and from the marina, and a welcome service that includes Dom Pérignon champagne.',
     ],
-    image: '/yachts/image5.jpg',
+    image: publicUrl('yachts/image5.jpg'),
     alt: 'Tecnomar for Lamborghini 63 signature yacht',
     layout: 'split-reverse',
   },

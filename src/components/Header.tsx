@@ -1,6 +1,7 @@
 import { Button } from '@mantine/core';
 import { useWindowScroll } from '@mantine/hooks';
 import { NavLink } from 'react-router-dom';
+import { publicUrl } from '../lib/publicUrl';
 
 const links = [
   { to: '/destinations', label: 'Destinations' },
@@ -29,7 +30,7 @@ export default function Header({ onInquire }: HeaderProps) {
       <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-5 md:px-container-margin-desktop">
         <NavLink to="/" className="flex items-center no-underline" aria-label="Go Bespoke home">
           <img
-            src="/PNG%20Logos/9.png"
+            src={publicUrl('PNG Logos/9.png')}
             alt="Go Bespoke"
             className="h-16 w-auto object-contain md:h-24"
           />

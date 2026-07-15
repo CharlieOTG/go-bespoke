@@ -1,24 +1,25 @@
 import PlanningBanner from '../components/PlanningBanner';
+import { publicUrl } from '../lib/publicUrl';
 
 const figures = [
   {
     title: 'The Departure',
     text: 'The moment a private charter earns its keep — wheels up within minutes of arrival, no gate, no queue, no wasted hour. A two-tone long-range jet lifts cleanly off the runway, already climbing toward cruise.',
-    image: '/flights/departure.jpg',
+    image: publicUrl('flights/departure.jpg'),
     alt: 'Private jet taking off',
     layout: 'full',
   },
   {
     title: 'Above the Weather',
     text: 'Once airborne, an ultra-long-range aircraft climbs well above commercial traffic and the turbulence beneath it — a smoother, quieter cruise for the hours that follow, whatever ocean lies ahead.',
-    image: '/flights/climbing.jpg',
+    image: publicUrl('flights/climbing.jpg'),
     alt: 'Private jet climbing against blue sky',
     layout: 'split',
   },
   {
     title: 'The Cabin',
     text: 'Deep seating, considered textiles, and a layout built around conversation rather than rows — the interior of a long-range jet is designed to feel like a private room that happens to be moving at Mach 0.85.',
-    image: '/flights/cabin.jpg',
+    image: publicUrl('flights/cabin.jpg'),
     alt: 'Luxury private jet cabin interior',
     layout: 'split-reverse',
   },

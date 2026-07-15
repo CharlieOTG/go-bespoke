@@ -27,7 +27,7 @@ function App() {
 
   return (
     <MantineProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
         <ScrollToTop />
         <Header onInquire={openEnquiry} />
         <EnquiryModal opened={enquiryOpen} onClose={closeEnquiry} />
