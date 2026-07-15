@@ -1,0 +1,32 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="navy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1E3D"/>
+      <stop offset="100%" stop-color="#132C56"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C77E"/>
+      <stop offset="100%" stop-color="#C9A24B"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#navy)"/>
+
+  <!-- sun -->
+  <circle cx="46" cy="14" r="6" fill="url(#gold)"/>
+
+  <!-- palm trunk -->
+  <path d="M32 30 C 30 38, 30 44, 27 50" stroke="url(#gold)" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- palm fronds -->
+  <g fill="none" stroke="url(#gold)" stroke-width="3.4" stroke-linecap="round">
+    <path d="M32 30 C 24 28, 18 22, 14 24"/>
+    <path d="M32 30 C 26 24, 24 17, 27 12"/>
+    <path d="M32 30 C 32 22, 34 16, 38 12"/>
+    <path d="M32 30 C 38 24, 46 22, 50 25"/>
+    <path d="M32 30 C 40 29, 47 32, 50 37"/>
+  </g>
+
+  <!-- water line -->
+  <path d="M10 50 Q 20 46, 32 50 Q 44 54, 54 50" stroke="url(#gold)" stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.85"/>
+</svg>
